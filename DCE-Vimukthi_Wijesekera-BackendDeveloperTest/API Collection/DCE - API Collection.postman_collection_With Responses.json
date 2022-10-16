@@ -1,0 +1,431 @@
+{
+	"info": {
+		"_postman_id": "eb1a0cd2-99e4-4dad-be40-917473521846",
+		"name": "DCE - API Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8516054"
+	},
+	"item": [
+		{
+			"name": "Customers",
+			"item": [
+				{
+					"name": "Get All Customers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44301/api/customers/all",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44301",
+							"path": [
+								"api",
+								"customers",
+								"all"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get All Customers",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:44301/api/customers/all",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "44301",
+									"path": [
+										"api",
+										"customers",
+										"all"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 16 Oct 2022 11:20:19 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"userId\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\",\n        \"username\": \"Vimukthi\",\n        \"email\": \"vimukthi@gmail.com\",\n        \"firstName\": \"Vimukthi\",\n        \"lastName\": \"Wijesekera\",\n        \"createdOn\": \"2022-10-15T00:00:00\",\n        \"isActive\": true\n    },\n    {\n        \"userId\": \"3fa85f54-5717-4562-b3fc-2c963f66afa7\",\n        \"username\": \"Updated\",\n        \"email\": \"Updated@gmail.com\",\n        \"firstName\": \"Updated 1\",\n        \"lastName\": \"Updated 2\",\n        \"createdOn\": \"2022-09-07T00:00:00\",\n        \"isActive\": true\n    },\n    {\n        \"userId\": \"12fd3395-40fc-4c8e-9261-72b85615a301\",\n        \"username\": \"Kavishka Wijesekera\",\n        \"email\": \"kavi@gmail.com\",\n        \"firstName\": \"Kavishka\",\n        \"lastName\": \"Wijesekera\",\n        \"createdOn\": \"2022-09-07T00:00:00\",\n        \"isActive\": false\n    },\n    {\n        \"userId\": \"c2ffb59c-55c8-4e9f-aed5-9a20b4dfe447\",\n        \"username\": \"Kavishka Wijesekera\",\n        \"email\": \"kavi@gmail.com\",\n        \"firstName\": \"Kavishka\",\n        \"lastName\": \"Wijesekera\",\n        \"createdOn\": \"2022-09-07T00:00:00\",\n        \"isActive\": false\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Add New Customer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"username\": \"Kavishka Vimukthi Wijesekera\",\r\n        \"email\": \"kavivimu@gmail.com\",\r\n        \"firstName\": \"Kavishka\",\r\n        \"lastName\": \"Wijesekera\",\r\n        \"createdOn\": \"2022-09-07T00:00:00\",\r\n        \"isActive\": false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44301/api/customers/create",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44301",
+							"path": [
+								"api",
+								"customers",
+								"create"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Add New Customer",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": " {\r\n        \"username\": \"Kavishka Vimukthi Wijesekera\",\r\n        \"email\": \"kavivimu@gmail.com\",\r\n        \"firstName\": \"Kavishka\",\r\n        \"lastName\": \"Wijesekera\",\r\n        \"createdOn\": \"2022-09-07T00:00:00\",\r\n        \"isActive\": false\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:44301/api/customers/create",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "44301",
+									"path": [
+										"api",
+										"customers",
+										"create"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 16 Oct 2022 11:23:10 GMT"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "Update Customer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userId\": \"e0ebc723-59de-42c4-9fbc-015b539f8273\",\r\n    \"username\": \"Vimukthi Wijesekera\",\r\n    \"email\": \"vimu@gmail.com\",\r\n    \"firstName\": \"Vimukthi\",\r\n    \"lastName\": \"Wijesekera\",\r\n    \"createdOn\": \"2022-09-07T00:00:00\",\r\n    \"isActive\": false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44301/api/customers/update",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44301",
+							"path": [
+								"api",
+								"customers",
+								"update"
+							],
+							"query": [
+								{
+									"key": "UserId",
+									"value": "3fa85f54-5717-4562-b3fc-2c963f66afa7",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update Customer",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"userId\": \"e0ebc723-59de-42c4-9fbc-015b539f8273\",\r\n    \"username\": \"Vimukthi Wijesekera\",\r\n    \"email\": \"vimu@gmail.com\",\r\n    \"firstName\": \"Vimukthi\",\r\n    \"lastName\": \"Wijesekera\",\r\n    \"createdOn\": \"2022-09-07T00:00:00\",\r\n    \"isActive\": false\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:44301/api/customers/update",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "44301",
+									"path": [
+										"api",
+										"customers",
+										"update"
+									],
+									"query": [
+										{
+											"key": "UserId",
+											"value": "3fa85f54-5717-4562-b3fc-2c963f66afa7",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 16 Oct 2022 11:27:45 GMT"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "Delete Customer",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44301/api/customers/delete?userId=e0ebc723-59de-42c4-9fbc-015b539f8273",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44301",
+							"path": [
+								"api",
+								"customers",
+								"delete"
+							],
+							"query": [
+								{
+									"key": "userId",
+									"value": "e0ebc723-59de-42c4-9fbc-015b539f8273"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete Customer",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:44301/api/customers/delete?userId=e0ebc723-59de-42c4-9fbc-015b539f8273",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "44301",
+									"path": [
+										"api",
+										"customers",
+										"delete"
+									],
+									"query": [
+										{
+											"key": "userId",
+											"value": "e0ebc723-59de-42c4-9fbc-015b539f8273"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 16 Oct 2022 11:28:08 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "60"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"removedCustomerId\": \"e0ebc723-59de-42c4-9fbc-015b539f8273\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Orders",
+			"item": [
+				{
+					"name": "GetActiveOrdersByCustomer",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44301/api/orders/activeordersbycustomer?customerId=3FA85F54-5717-4562-B3FC-2C963F66AFA7",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44301",
+							"path": [
+								"api",
+								"orders",
+								"activeordersbycustomer"
+							],
+							"query": [
+								{
+									"key": "customerId",
+									"value": "3FA85F54-5717-4562-B3FC-2C963F66AFA7"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "GetActiveOrdersByCustomer",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:44301/api/orders/activeordersbycustomer?customerId=3FA85F54-5717-4562-B3FC-2C963F66AFA7",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "44301",
+									"path": [
+										"api",
+										"orders",
+										"activeordersbycustomer"
+									],
+									"query": [
+										{
+											"key": "customerId",
+											"value": "3FA85F54-5717-4562-B3FC-2C963F66AFA7"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 16 Oct 2022 11:29:02 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"orderId\": \"3fa85f54-5717-4512-b3fc-2c963f66afa6\",\n        \"productId\": \"3fa85f64-5717-4512-b3fc-2c963f66afa6\",\n        \"orderStatus\": 1,\n        \"orderType\": 1,\n        \"orderBy\": \"3fa85f54-5717-4562-b3fc-2c963f66afa7\",\n        \"orderedOn\": \"2022-10-15T00:00:00\",\n        \"shippedOn\": \"2022-10-15T00:00:00\",\n        \"isOrderActive\": true,\n        \"productName\": \"prod2\",\n        \"unitPrice\": 970,\n        \"supplierId\": \"3fa85f64-5717-4512-b3fc-2c963f36afa6\",\n        \"productCreatedOn\": \"2022-10-15T00:00:00\",\n        \"isProductActive\": true,\n        \"supplierName\": \"sup2\",\n        \"supplierCreatedOn\": \"2022-10-15T00:00:00\",\n        \"isSupplierActive\": true\n    }\n]"
+						}
+					]
+				}
+			]
+		}
+	]
+}
