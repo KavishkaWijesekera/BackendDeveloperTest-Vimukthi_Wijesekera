@@ -6,3 +6,4 @@ Before run the backend, Create the DB(Create Tables Query.sql), Tables(Create Ta
 After that run the insert query(Insert Query.sql) inside script folder
 
 Change the connection string inside the appsettings.js
+
