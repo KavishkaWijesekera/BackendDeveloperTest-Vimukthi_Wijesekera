@@ -51,17 +51,17 @@ namespace DCE___Vimukthi_Wijesekera.Repositories
                     orderDto.OrderBy = Guid.Parse(dt.Rows[i]["OrderBy"].ToString());
                     orderDto.OrderedOn = Convert.ToDateTime(dt.Rows[i]["OrderedOn"]);
                     orderDto.ShippedOn = Convert.ToDateTime(dt.Rows[i]["ShippedOn"]);
-                    orderDto.IsOrderActive = Convert.ToBoolean(dt.Rows[i]["IsActive"]);
+                    orderDto.IsOrderActive = Convert.ToBoolean(dt.Rows[i]["IsActiveOrder"]);
 
                     orderDto.ProductName = dt.Rows[i]["ProductName"].ToString();
                     orderDto.UnitPrice = Convert.ToDecimal(dt.Rows[i]["UnitPrice"]);
                     orderDto.SupplierId = Guid.Parse(dt.Rows[i]["SupplierId"].ToString());
-                    orderDto.ProductCreatedOn = Convert.ToDateTime(dt.Rows[i]["CreatedOn"]);
-                    orderDto.IsProductActive = Convert.ToBoolean(dt.Rows[i]["IsActive"]);
+                    orderDto.ProductCreatedOn = Convert.ToDateTime(dt.Rows[i]["CreatedOnProduct"]);
+                    orderDto.IsProductActive = Convert.ToBoolean(dt.Rows[i]["IsActiveProduct"]);
 
                     orderDto.SupplierName = dt.Rows[i]["SupplierName"].ToString();
-                    orderDto.SupplierCreatedOn = Convert.ToDateTime(dt.Rows[i]["CreatedOn"]);
-                    orderDto.IsSupplierActive = Convert.ToBoolean(dt.Rows[i]["IsActive"]);
+                    orderDto.SupplierCreatedOn = Convert.ToDateTime(dt.Rows[i]["CreatedOnSuplier"]);
+                    orderDto.IsSupplierActive = Convert.ToBoolean(dt.Rows[i]["IsActivate"]);
                     orderList.Add(orderDto);
                 }
                 con.Close();
