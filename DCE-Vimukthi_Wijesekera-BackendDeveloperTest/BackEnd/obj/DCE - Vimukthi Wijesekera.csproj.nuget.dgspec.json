@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Kavishka Wijesekera\\Desktop\\DCE-Vimukthi_Wijesekera-BackendDeveloperTest\\BackEnd\\DCE - Vimukthi Wijesekera.csproj": {}
+    "C:\\Users\\Kavishka Wijesekera\\Desktop\\Clone\\BackendDeveloperTest-Vimukthi_Wijesekera\\DCE-Vimukthi_Wijesekera-BackendDeveloperTest\\BackEnd\\DCE - Vimukthi Wijesekera.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Kavishka Wijesekera\\Desktop\\DCE-Vimukthi_Wijesekera-BackendDeveloperTest\\BackEnd\\DCE - Vimukthi Wijesekera.csproj": {
+    "C:\\Users\\Kavishka Wijesekera\\Desktop\\Clone\\BackendDeveloperTest-Vimukthi_Wijesekera\\DCE-Vimukthi_Wijesekera-BackendDeveloperTest\\BackEnd\\DCE - Vimukthi Wijesekera.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kavishka Wijesekera\\Desktop\\DCE-Vimukthi_Wijesekera-BackendDeveloperTest\\BackEnd\\DCE - Vimukthi Wijesekera.csproj",
+        "projectUniqueName": "C:\\Users\\Kavishka Wijesekera\\Desktop\\Clone\\BackendDeveloperTest-Vimukthi_Wijesekera\\DCE-Vimukthi_Wijesekera-BackendDeveloperTest\\BackEnd\\DCE - Vimukthi Wijesekera.csproj",
         "projectName": "DCE - Vimukthi Wijesekera",
-        "projectPath": "C:\\Users\\Kavishka Wijesekera\\Desktop\\DCE-Vimukthi_Wijesekera-BackendDeveloperTest\\BackEnd\\DCE - Vimukthi Wijesekera.csproj",
+        "projectPath": "C:\\Users\\Kavishka Wijesekera\\Desktop\\Clone\\BackendDeveloperTest-Vimukthi_Wijesekera\\DCE-Vimukthi_Wijesekera-BackendDeveloperTest\\BackEnd\\DCE - Vimukthi Wijesekera.csproj",
         "packagesPath": "C:\\Users\\Kavishka Wijesekera\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Kavishka Wijesekera\\Desktop\\DCE-Vimukthi_Wijesekera-BackendDeveloperTest\\BackEnd\\obj\\",
+        "outputPath": "C:\\Users\\Kavishka Wijesekera\\Desktop\\Clone\\BackendDeveloperTest-Vimukthi_Wijesekera\\DCE-Vimukthi_Wijesekera-BackendDeveloperTest\\BackEnd\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Kavishka Wijesekera\\AppData\\Roaming\\NuGet\\NuGet.Config",

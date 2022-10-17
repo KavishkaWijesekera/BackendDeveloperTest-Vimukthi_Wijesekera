@@ -22,6 +22,7 @@ namespace DCE___Vimukthi_Wijesekera.Repositories
         public List<OrderDTO> GetActiveOrdersByCustomer(Guid CustomerId)
         {
             List<OrderDTO> orderList = new List<OrderDTO>();
+
             SqlConnection con = new SqlConnection(_configuration.GetConnectionString("DefaultConnection"));
             con.Open();
 
