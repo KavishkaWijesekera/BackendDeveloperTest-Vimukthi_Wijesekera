@@ -5,7 +5,9 @@ CREATE PROCEDURE SP_GetActiveOrdersByCustomer
 AS
 BEGIN
 
-SELECT Orders.*, Product.*, Supplier.* 
+SELECT Orders.OrderId, Orders.ProductId, Orders.OrderStatus, Orders.OrderType, Orders.OrderBy, Orders.OrderedOn, Orders.ShippedOn, Orders.IsActive AS IsActiveOrder, 
+Product.ProductName, Product.UnitPrice, Product.SupplierId, Product.CreatedOn AS CreatedOnProduct, Product.IsActive AS IsActiveProduct,
+Supplier.SupplierName, Supplier.CreatedOn AS CreatedOnSuplier, Supplier.IsActivate 
 FROM Orders 
 INNER JOIN Product 
 ON Orders.ProductId = Product.ProductId
